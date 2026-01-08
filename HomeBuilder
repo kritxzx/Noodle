@@ -1,0 +1,53 @@
+// File: <NAME OF FILE>
+// Description: <A DESCRIPTION OF YOUR CODE>
+// Assignment Number: <e.g., 1 – 13>
+//
+// ID: <YOUR STUDENT ID>
+// Name: <YOUR FULLNAME>
+// Section: <YOUR SECTION e.g., 1, 2, or 3>
+// Grader: <YOUR GRADER’S NAME>
+//
+// On my honor, <YOUR FULLNAME>, this lab assignment is my own work
+// and I have not provided this code to any other students.
+
+public class HomeBuilder {
+  public static void main(String[] args) {
+	  System.out.println("STEP 1:\n");
+	  floor();
+	  System.out.println("STEP 2:\n");
+	  wall();
+	  floor();
+	  System.out.println("STEP 3:\n");
+  }
+  
+  
+  static void floor() {
+	   System.out.print("============");
+	  }
+  
+  static void wall() {
+	   for(int i = 1; i <= 4; i++) {
+		   for(int j = 1; j <= 12; j++) {
+			   if ((i >= 0 && i <= 4) && (j == 1 || j == 2 || j == 11)) {
+				   System.out.print("|");
+			   }if (j == 12) {
+				   System.out.print("|\n");
+			   }else if (j > 2 && j <= 10){
+				   System.out.print(" ");
+			   }
+		   }
+	   }
+  	}
+  
+  static void roof() {
+	  for (int i = 1; i <= 12; i++) {
+		  for (int j = 1; j <= 6; j++) {
+			  
+		  }
+	  }
+	  
+  }
+}
+
+
+
